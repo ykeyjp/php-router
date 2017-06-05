@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="router" default="build">
+    <target name="php-cs-fixer">
+        <exec command="php vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix -v ."
+              logoutput="true"/>
+    </target>
+    <target name="phplint">
+        <phplint>
+            <fileset dir="src">
+                <include name="**/*.php"/>
+            </fileset>
+        </phplint>
+    </target>
+    <target name="phpmd">
+        <exec command="php vendor/phpmd/phpmd/src/bin/phpmd src/ text phpmd.xml"
+              logoutput="true"/>
+    </target>
+    <target name="phpunit">
+        <exec command="php vendor/phpunit/phpunit/phpunit"
+              logoutput="true"/>
+    </target>
+    <target name="build" depends="php-cs-fixer,phplint,phpmd,phpunit"/>
+</project>

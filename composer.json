@@ -1,0 +1,51 @@
+{
+  "name": "ykey/router",
+  "description": "PHP Router Library.",
+  "version": "0.1.0",
+  "type": "library",
+  "keywords": [
+    "psr-7",
+    "router"
+  ],
+  "homepage": "https://github.com/ykeyjp/php-router",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ykey",
+      "email": "ykey.jp@gmail.com",
+      "homepage": "https://github.com/ykeyjp",
+      "role": "developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ykeyjp/php-router/issues"
+  },
+  "config": {
+    "process-timeout": 0
+  },
+  "scripts": {
+    "build": "phing build"
+  },
+  "autoload": {
+    "psr-4": {
+      "ykey\\router\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ykey\\router\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "psr/http-message": "^1.0",
+    "psr/container": "^1.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "*",
+    "phing/phing": "*",
+    "phpmd/phpmd": "*",
+    "phpunit/phpunit": "*",
+    "zendframework/zend-diactoros": "*"
+  }
+}

@@ -1,0 +1,10 @@
+vendor/
+composer.lock
+.php_cs.cache
+# editor
+.idea/
+.vscode/
+.atom/
+# os
+.DS_Store
+Thumbs.db
