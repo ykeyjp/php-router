@@ -12,7 +12,7 @@ ykey/router - PHP Router Library
 {
   "repositories": [{
     "url": "https://github.com/ykeyjp/php-router.git",
-    "type": "git"
+    "type": "vcs"
   }],
   "require": {
     "ykey/router": "*"
