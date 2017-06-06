@@ -36,16 +36,28 @@
       "ykey\\router\\": "tests/"
     }
   },
+  "repositories": [
+    {
+      "url": "https://github.com/ykeyjp/php-container.git",
+      "type": "vcs"
+    },
+    {
+      "url": "https://github.com/ykeyjp/php-middleware.git",
+      "type": "vcs"
+    }
+  ],
   "require": {
     "php": ">=7.1",
     "psr/http-message": "^1.0",
-    "psr/container": "^1.0"
+    "psr/container": "^1.0",
+    "ykey/middleware": "*"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "*",
     "phing/phing": "*",
     "phpmd/phpmd": "*",
     "phpunit/phpunit": "*",
+    "ykey/container": "*",
     "zendframework/zend-diactoros": "*"
   }
 }
