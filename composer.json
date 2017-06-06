@@ -38,6 +38,10 @@
   },
   "repositories": [
     {
+      "url": "https://github.com/ykeyjp/php-container.git",
+      "type": "vcs"
+    },
+    {
       "url": "https://github.com/ykeyjp/php-middleware.git",
       "type": "vcs"
     }
@@ -53,6 +57,7 @@
     "phing/phing": "*",
     "phpmd/phpmd": "*",
     "phpunit/phpunit": "*",
+    "ykey/container": "*",
     "zendframework/zend-diactoros": "*"
   }
 }
